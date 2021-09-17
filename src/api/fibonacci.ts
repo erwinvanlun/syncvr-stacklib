@@ -8,14 +8,22 @@ export interface APIFibonacciNumberMeta {
   fibonacci: number;
 }
 
+export enum APIFibonacci {
+  base = 'fibonacci',
+  calc = '',
+  history = 'history'
+}
+
 export interface APIFibonacciNumberRequestResponse {
   result: APIFibonacciNumberMeta;
   resultCode: APIFibonacciResultCodes
 }
 
-export interface APIFibonacciHistoryRequest {
-  before: number;
-  after: number;
+export interface APIFibonacciHistoryRequest{
+  range: {
+    before: number
+    after: number;
+  };
 }
 
 export interface APIFibonacciHistoryResponse {
