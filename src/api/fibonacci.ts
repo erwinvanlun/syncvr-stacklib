@@ -19,14 +19,13 @@ export interface APIFibonacciNumberRequestResponse {
   resultCode: APIFibonacciResultCodes
 }
 
-export interface APIFibonacciHistoryRequest{
-  range: {
-    before: number
-    after: number;
-  };
+export interface APIFibonacciHistoryRequest {
+  head: number;
+  tail: number;
 }
 
 export interface APIFibonacciHistoryResponse {
   history: APIFibonacciNumberMeta[];
+  availableTail: number;
   resultCode: APIFibonacciResultCodes
 }

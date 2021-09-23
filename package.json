@@ -1,6 +1,6 @@
 {
   "name": "syncvr",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "description": "StackLibrary for Frontend and Backend",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
