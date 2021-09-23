@@ -22,6 +22,7 @@ export interface APIFibonacciNumberRequestResponse {
 export interface APIFibonacciHistoryRequest {
   head: number;
   tail: number;
+  maxTailingRows: number;
 }
 
 export interface APIFibonacciHistoryResponse {
